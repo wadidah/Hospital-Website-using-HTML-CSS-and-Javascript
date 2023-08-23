@@ -8,66 +8,133 @@ body{
     background-color: white;
     color: #fff;
 }
-.header{
+header{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(256,256,256,0),rgba(256,256,256,0)),url(Background1.2.jpg);
+    background-image: linear-gradient(rgba(256,256,256,0),rgba(256,256,256,0)),url(bk3.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 10px 2%;
+    padding: 10px 4%;
 }
 .row{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 .row-col img{
-    flex-basis: 15%;
     width: 150px;
     cursor: pointer;
 }
-.menue{
-    flex-basis: 15%;
-    width: 40px;
-    cursor: pointer;
-    padding-bottom: 10px;
-    padding-left: 20px;
-}
-.menue button{
-    height: 35px;
-    width: 50px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px;
-    border-radius: 40px;
-    cursor: pointer;
-}
-.menue button:hover{
-    background-color: blue;
-    transition: 1s;
-}
-.list{
-    flex-basis: 50%;
-    align-items: center;
-    padding-bottom: 20px;
-    padding-right: 00px;
-}
-.list ul li{
+.menu{
     list-style: none;
-    display: inline-block;
-    margin-left: 5px;
-    position: relative;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
 }
-button{
-    height: 20px;
-    width: 70px;
+*.fa-bars{
+    padding-top: 5px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu li a button{
+    padding: 3px 10px;
     background-color: transparent;
     color: #fff;
-    border: 1px;
+    border: 1px solid white;
     border-radius: 20px;
     cursor: pointer;
 }
-button:hover{
-    background-color: blue;
+.menu li a button:hover{
+    background-color: #00022e;
     transition: 1s;
+}
+.language button{
+    padding: 1px 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.number button{
+    padding: 2px 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.language img{
+    width: 20px;
+    cursor: pointer;
+}
+.language,
+.number{
+    padding-bottom: 18px;
+}
+.language{
+    padding-left: 80px;
+}
+.number{
+    padding-right: 60px;
+}
+h2{
+    text-align: left;
+    justify-content: top;
+    padding-left: 100px;
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+.facts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.facts h3{
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.facts-row{
+    padding-top: 7rem;
+    padding-right: 8rem;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+.discount{
+    padding-left: 2rem;
+    padding-top: 10rem;
+    text-align: left;
+    justify-content: center;
+    background-color: #00022e;
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+}
+.discount p{
+    padding-top: 2rem;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.discount h1{
+    padding-top: 2rem;
+}
+.discount button{
+    padding: 4px 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
 }
