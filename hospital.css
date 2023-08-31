@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins','sans-serif';
+    font-family: 'Poppins','dancing';
     box-sizing: border-box;
 }
 body{
     background-color: white;
-    color: #fff;
 }
 header{
+    color: #fff;
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(256,256,256,0),rgba(256,256,256,0)),url(bk3.jpg);
@@ -72,6 +72,7 @@ header{
 .language img{
     width: 20px;
     cursor: pointer;
+    float: left;
 }
 .language,
 .number{
@@ -143,6 +144,7 @@ h2{
 .discount button:hover{
     background-color: #fff4;
 }
+/*About*/
 .header2{
     color: black;
     background-color: white;
@@ -179,7 +181,8 @@ h2{
 }
 .about3 img{
     margin-left: 7rem;
-    margin-top: 6rem;
+    margin-top: 8rem;
+    object-fit: cover;
     height: 200px;
     width: 450px;
 }
@@ -221,8 +224,392 @@ h2{
     box-shadow: 0 3rem ;
 }
 .gallery{
+    margin: 0;
+    border: 0;
+    background-color: #fff;
     color: black;
 }
-.gallery01{
+.gallery1{
     display: flex;
+    padding-left: 10rem;
+    padding-top: 4rem;
+}
+.gallery01 h3{
+    font-size: 30px;
+}
+.gallery02{
+    padding-left: 11rem;
+    font-size: 32px;
+}
+.gallery02 button{
+    padding: 3px 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.social-media{
+    padding-left: 15rem;
+}
+.gallery20{
+    display: flex;
+}
+.gallery21{
+    padding-left: 7rem;
+    padding-top: 7rem;
+}
+.gallery21 img{
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
+}
+.gallery20 button{
+    margin-left: 2.6rem;
+    margin-right: 2.6rem;
+    margin-top: 17rem;
+    height: 70px;
+    width: 80px;
+    border-radius: 50% ;
+    background-color: blue;
+    color: white;
+}
+.gallery22{
+    padding-left: 1.4rem;
+    padding-top: 7rem;
+}
+.gallery22 img{
+    height: 300px;
+    width: 260px;
+    object-fit: cover;
+}
+.gallery23{
+    padding-left: 1.6rem;
+    padding-top: 7rem;
+}
+.gallery23 img{
+    height: 300px;
+    width: 260px;
+    object-fit: cover;
+}
+.gallery20 p{
+    padding-left: 2rem;
+}
+.gallery20 h3{
+    padding-top: 1rem;
+}
+/*Services*/
+.services{
+    margin: 0;
+    border: 0;
+    background-color: #fff;
+    color: black;
+}
+.services1{
+    display: flex;
+}
+.services10 h4{
+    padding-top: 7rem;
+    padding-left: 8rem;
+    font-size: 21px;
+}
+.services11{
+    margin-top: 6rem;
+    padding-left: 6rem;
+}
+.services11 h3{
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.services11 button{
+    padding: 3px 32px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.services11 button:hover{
+    background-color: #00022e;
+    transition: 1s;
+}
+.accordion{
+    margin: 60px auto;
+    width: 70%;
+    /*max-width: 750px;*/
+}
+.accordion li{
+    margin-left: 6rem;
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    background: white;
+    border-bottom: 1px solid black;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+li label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+    overflow: hidden;
+}
+.services2{
+    display: flex;
+}
+.services12{
+    margin-top: 5rem;
+    margin-left: 9rem;
+    width: 40%;
+    text-align: left;
+    justify-content: left;
+    align-self: left;
+    background-color: #00022e;
+    color: #fff;
+    padding: 20px 40px;
+}
+.services12{
+    justify-content: left;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.services12 h1{
+    padding-top: 3rem;
+    font-size: 32px;
+}
+.services12 button{
+    float: right;
+    padding: 10px 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: left;
+}
+.services12 button:hover{
+    background-color: #fff4;
+}
+.services123{
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+/*Doctors*/
+.doctors{
+    margin: 0;
+    border: 0;
+    background-color: #fff;
+    color: black;
+}
+.doctors1{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 9rem;
+}
+.doctors1 h4{
+    font-size: 18px;
+}
+.doctors12{
+    margin-left: 10rem;
+}
+.doctors12 h3{
+    font-size: 38px;
+}
+.doctors12 p{
+    font-size: 16px;
+    padding-top: 1rem;
+}
+.doctors1 button{
+    margin-left: 32rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: black;
+}
+.doctors1 button:hover{
+    background-color: #00022e;
+    transition: 1s
+}
+.doctors-img{
+    padding-left: 23rem;
+    margin-top: 2rem;
+    display: flex;
+}
+.doctors-img1 img{
+    width: 300px;
+    height: 250px;
+}
+.doctors-img2 img{
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+}
+.doctors-img3 img{
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+}
+.doctors-img h4{
+    font-size: 20px;
+}
+.doctors-img button{
+    padding: 3px 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.doctors-img button:hover{
+    background-color: #00022e;
+    transition: 1s;
+}
+.doctors1-img{
+    margin-left: 23rem;
+    margin-top: 2rem;
+    display: flex;
+}
+.doctors-img4 img{
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+}
+.doctors-img5 img{
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+}
+.doctors-img6 img{
+    width: 300px;
+    height: 250px;
+}
+.doctors1-img h4 p{
+    margin-right: 26rem;
+}
+.doctors1-img button{
+    padding: 3px 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.doctors1-img button:hover{
+    background-color: #00022e;
+    transition: 1s;
+}
+/*Reviews*/
+.reviews{
+    margin: 0;
+    border: 0;
+    background-color: white;
+    color: black;
+}
+.feedback{
+    color: black;
+}
+.feedback1{
+    display: flex;
+}
+.feedback10{
+    margin-top: 4rem;
+    margin-left: 9rem;
+}
+.feedback11{
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+.feedback11 h4{
+    font-size: 32px;
+}
+.feedback11 p{
+    margin-left: 6.4rem;
+    margin-top: 1rem;
+}
+.feedback12 button{
+    margin-top: 5rem;
+    margin-left: 27rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 50% ;
+    background-color: transparent;
+    color: black;
+}
+.feedback12 button:hover{
+    background-color: #00022e;
+    transition: 1s
+}
+.feedback2{
+    display: flex;
+}
+.feedback20 img{
+    height: 70px;
+    width: 80px;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-left: 24rem;
+}
+.feedback21{
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+.feedback21 button{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: black;
+}
+.feedback21 h4{
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 19px;
+}
+.feedback21 h5{
+    margin-top: 1rem;
+    font-size: 16px;
+}
+.form{
+    background-color: blue;
+    color: white;
+}
+.form1{
+    display: flex;
+}
+.form-img img{
+    margin-top: 4rem;
+    margin-left: 6rem;
+    align-items: center;
+    justify-content: left;
+    width: 150px;
+    cursor: pointer;
+}
+.form10{
+    margin-left: 6rem;
+    padding-left: 100px;
+    
+}
+.form10 label input{
+    margin-left: 6rem;
 }
